@@ -25,3 +25,6 @@ sudo apt-get install python3-numpy
 
 You will need an gamepad, in the future i am planning to also use the keyboard keys to drive it. (I have an cheap CSL gamepad)<br/><br/>
 If you are planning to drive it via LTE/3G, you will need to set up an reverse SSH tunnel, description to do that is planned in the future here.
+
+<br/><br/>
+ATTENTION: This is a BETA version, no liability is assumed for any damage, <br/>you are responsible for using it in full!
