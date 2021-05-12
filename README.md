@@ -1,8 +1,8 @@
 # LTE-TCP-FPV-RC-Car
 Full project for creating an unlimited range fpv car driven over the web<br/>
-CREDITS: Source code for Camera-Server on Raspberry Pi from Yasin Arabi<br/><br/><br/>
+CREDITS: Source code for Camera-Server on Raspberry Pi from Yasin Arabi<br/><br/>
 servo = 12 #Pin12 Out PWM -> Acceleration(Motor)<br/>
-servo2 = 13 #Pin13 Out PWM -> Steering<br/><br/><br/>
+servo2 = 13 #Pin13 Out PWM -> Steering<br/><br/>
 
 Welcome to this project, if you just want to drive a RC-Car via Wifi network (locally) you are ready to go with the Server.py on "Raspberry Pi Zero"
 and Server.exe on Windows PC, just insert your local IP in the code. You also need to autostart the server.py and the stream.py!<br/><br/>
@@ -19,7 +19,7 @@ sudo python3 /home/pi/server.py &<br/>
 sudo reboot<br/><br/>
 
 also needed:<br/><br/>
-sudo apt-get -y install python3-rpi.gpio
+sudo apt-get -y install python3-rpi.gpio<br/>
 sudo apt-get install python3-numpy 
 <br/><br/>
 
