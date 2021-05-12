@@ -7,13 +7,21 @@ servo2 = 13 #Pin13 Out PWM -> Steering<br/><br/><br/>
 Welcome to this project, if you just want to drive a RC-Car via Wifi network (locally) you are ready to go with the Server.py on "Raspberry Pi Zero"
 and Server.exe on Windows PC, just insert your local IP in the code. You also need to autostart the server.py and the stream.py!<br/><br/>
 Connect to the camera with: http://192.168.1.161:8001/stream.mjpg e.g., connect to the server.py with the client.exe.<br/>
-Autostart both with:<br/>
+Autostart both with:
+
+<br/>
+<br/>
 sudo nano /etc/rc.local<br/>
 
 sudo python3 /home/pi/stream.py &<br/>
 sudo python3 /home/pi/server.py &<br/>
 
 sudo reboot<br/><br/>
+
+also needed:<br/><br/>
+sudo apt-get -y install python3-rpi.gpio
+sudo apt-get install python3-numpy 
+<br/><br/>
 
 You will need an gamepad, in the future i am planning to also use the keyboard keys to drive it. (I have an cheap CSL gamepad)<br/><br/>
 If you are planning to drive it via LTE/3G, you will need to set up an reverse SSH tunnel, description to do that is planned in the future here.
