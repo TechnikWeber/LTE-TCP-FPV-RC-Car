@@ -1,4 +1,4 @@
-# LTE-TCP-FPV-RC-Car
+# LTE-TCP-FPV-RC-Car BRANCH for Version 1.1 with PCA Chip (No more jitter on the servos)
 Full project for creating an unlimited range fpv car driven over the web<br/>
 CREDITS: Source code for Camera-Server on Raspberry Pi from Yasin Arabi<br/><br/>
 servo = 12 #Pin12 Out PWM -> Acceleration(Motor)<br/>
