@@ -23,7 +23,8 @@ sudo reboot<br/><br/>
 also needed:<br/><br/>
 sudo apt-get -y install python3-rpi.gpio<br/>
 sudo apt-get install python3-numpy <br/>
-sudo apt-get install python3-pip
+sudo apt-get install python3-pip <br/>
+sudo pip3 install picamera
 
 And:
 
