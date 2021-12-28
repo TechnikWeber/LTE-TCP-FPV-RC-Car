@@ -27,7 +27,7 @@ sudo apt-get install python3-pip
 
 And:
 
-sudo pip3 install Adafruit-PCA9685
+sudo pip3 install Adafruit-PCA9685<br/>
 sudo apt-get install i2c-tools
 
 wenn address in use:
