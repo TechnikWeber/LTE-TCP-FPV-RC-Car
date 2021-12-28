@@ -30,7 +30,8 @@ sudo apt-get dist-upgrade<br/>
 sudo raspi-config<br/>
 
 (Activate Camera)<br/>
-(Activate I2C)
+(Activate I2C))<br/>
+(Enable Legacy Camera mode!)
 
 sudo apt-get -y install python3-rpi.gpio<br/>
 sudo apt-get install python3-numpy <br/>
