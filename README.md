@@ -23,6 +23,14 @@ sudo reboot<br/><br/>
 also needed:<br/><br/>
 sudo apt-get -y install python3-rpi.gpio<br/>
 sudo apt-get install python3-numpy 
+
+And:
+
+sudo pip3 install Adafruit-PCA9685
+sudo apt-get install i2c-tools
+
+wenn address in use:
+sudo pkill python3
 <br/><br/>
 
 You will need an gamepad, in the future i am planning to also use the keyboard keys to drive it. (I have an cheap CSL gamepad)<br/><br/>
