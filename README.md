@@ -18,6 +18,9 @@ sudo nano /etc/rc.local<br/>
 sudo python3 /home/pi/stream.py &<br/>
 sudo python3 /home/pi/server.py &<br/>
 
+sudo chmod +x server.py<br/>
+sudo chmod +x stream.py<br/>
+
 sudo reboot<br/><br/>
 
 also needed:<br/><br/>
