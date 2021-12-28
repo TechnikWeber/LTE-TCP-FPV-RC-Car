@@ -23,6 +23,7 @@ sudo reboot<br/><br/>
 also needed:<br/><br/>
 sudo apt-get -y install python3-rpi.gpio<br/>
 sudo apt-get install python3-numpy 
+sudo apt-get install python3-pip
 
 And:
 
