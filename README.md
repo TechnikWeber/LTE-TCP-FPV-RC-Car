@@ -21,6 +21,17 @@ sudo python3 /home/pi/server.py &<br/>
 sudo reboot<br/><br/>
 
 also needed:<br/><br/>
+sudo apt-get update<br/>
+
+sudo apt-get upgrade<br/>
+
+sudo apt-get dist-upgrade<br/>
+
+sudo raspi-config<br/>
+
+(Activate Camera)<br/>
+(Activate I2C)
+
 sudo apt-get -y install python3-rpi.gpio<br/>
 sudo apt-get install python3-numpy <br/>
 sudo apt-get install python3-pip <br/>
