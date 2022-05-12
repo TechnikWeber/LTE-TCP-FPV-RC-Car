@@ -50,6 +50,9 @@ namespace RemoteControlClientV1._0
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.btn_controllerconnect = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btc_connect
@@ -71,7 +74,7 @@ namespace RemoteControlClientV1._0
             this.tb_ip.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_ip.Location = new System.Drawing.Point(285, 49);
             this.tb_ip.Name = "tb_ip";
-            this.tb_ip.Size = new System.Drawing.Size(118, 26);
+            this.tb_ip.Size = new System.Drawing.Size(134, 26);
             this.tb_ip.TabIndex = 1;
             this.tb_ip.Text = "192.168.1.161";
             // 
@@ -92,7 +95,7 @@ namespace RemoteControlClientV1._0
             this.tb_port.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_port.Location = new System.Drawing.Point(285, 81);
             this.tb_port.Name = "tb_port";
-            this.tb_port.Size = new System.Drawing.Size(118, 26);
+            this.tb_port.Size = new System.Drawing.Size(134, 26);
             this.tb_port.TabIndex = 3;
             this.tb_port.Text = "65432";
             // 
@@ -179,7 +182,7 @@ namespace RemoteControlClientV1._0
             this.tb_output.Name = "tb_output";
             this.tb_output.ReadOnly = true;
             this.tb_output.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tb_output.Size = new System.Drawing.Size(159, 75);
+            this.tb_output.Size = new System.Drawing.Size(175, 75);
             this.tb_output.TabIndex = 17;
             // 
             // label8
@@ -198,7 +201,7 @@ namespace RemoteControlClientV1._0
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label9.Location = new System.Drawing.Point(187, 274);
+            this.label9.Location = new System.Drawing.Point(187, 259);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(84, 20);
             this.label9.TabIndex = 19;
@@ -208,35 +211,38 @@ namespace RemoteControlClientV1._0
             // 
             this.tb_x.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.tb_x.Enabled = false;
-            this.tb_x.Location = new System.Drawing.Point(274, 276);
+            this.tb_x.Location = new System.Drawing.Point(299, 261);
             this.tb_x.Name = "tb_x";
-            this.tb_x.Size = new System.Drawing.Size(39, 20);
+            this.tb_x.Size = new System.Drawing.Size(51, 20);
             this.tb_x.TabIndex = 20;
+            this.tb_x.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tb_y
             // 
             this.tb_y.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.tb_y.Enabled = false;
-            this.tb_y.Location = new System.Drawing.Point(319, 276);
+            this.tb_y.Location = new System.Drawing.Point(299, 287);
             this.tb_y.Name = "tb_y";
-            this.tb_y.Size = new System.Drawing.Size(39, 20);
+            this.tb_y.Size = new System.Drawing.Size(51, 20);
             this.tb_y.TabIndex = 21;
+            this.tb_y.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tb_z
             // 
             this.tb_z.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.tb_z.Enabled = false;
-            this.tb_z.Location = new System.Drawing.Point(364, 276);
+            this.tb_z.Location = new System.Drawing.Point(299, 313);
             this.tb_z.Name = "tb_z";
-            this.tb_z.Size = new System.Drawing.Size(39, 20);
+            this.tb_z.Size = new System.Drawing.Size(51, 20);
             this.tb_z.TabIndex = 22;
+            this.tb_z.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label10.Location = new System.Drawing.Point(283, 258);
+            this.label10.Location = new System.Drawing.Point(282, 261);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(15, 15);
             this.label10.TabIndex = 23;
@@ -247,7 +253,7 @@ namespace RemoteControlClientV1._0
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label11.Location = new System.Drawing.Point(330, 258);
+            this.label11.Location = new System.Drawing.Point(282, 288);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(14, 15);
             this.label11.TabIndex = 24;
@@ -258,7 +264,7 @@ namespace RemoteControlClientV1._0
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label12.Location = new System.Drawing.Point(377, 258);
+            this.label12.Location = new System.Drawing.Point(282, 313);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(14, 15);
             this.label12.TabIndex = 25;
@@ -277,12 +283,48 @@ namespace RemoteControlClientV1._0
             this.btn_controllerconnect.UseVisualStyleBackColor = false;
             this.btn_controllerconnect.Click += new System.EventHandler(this.btn_controllerconnect_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label3.Location = new System.Drawing.Point(356, 261);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 15);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "Channel 1";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label4.Location = new System.Drawing.Point(356, 287);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(63, 15);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "Channel 2";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label7.Location = new System.Drawing.Point(356, 314);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(63, 15);
+            this.label7.TabIndex = 29;
+            this.label7.Text = "Channel 3";
+            // 
             // RCC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkBlue;
-            this.ClientSize = new System.Drawing.Size(434, 321);
+            this.ClientSize = new System.Drawing.Size(447, 357);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btn_controllerconnect);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -307,7 +349,7 @@ namespace RemoteControlClientV1._0
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RCC";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "RemoteControlClientV1.0 BETA";
+            this.Text = "RemoteControlClientV1.1 BETA";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RCC_FormClosing);
             this.Load += new System.EventHandler(this.RCC_Load);
             this.ResumeLayout(false);
@@ -337,6 +379,9 @@ namespace RemoteControlClientV1._0
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button btn_controllerconnect;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label7;
     }
 }
 

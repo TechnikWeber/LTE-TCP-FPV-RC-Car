@@ -259,6 +259,7 @@ namespace RemoteControlClientV1._0
             yValue = state.Y;
             xValue = state.X;
             zValue = state.Z;
+            
 
             bool[] buttons = state.GetButtons();
 

@@ -1,20 +1,19 @@
+from __future__ import division
 import socket
 import RPi.GPIO as gpio
 import time
+import numpy as np
 from numpy import interp
+import time
+import Adafruit_PCA9685
 
-servo = 12 #Pin12 Out PWM -> Acceleration(Motor)
-servo2 = 13 #Pin13 Out PWM -> Steering
 gpio.setmode(gpio.BCM)
-gpio.setup(servo, gpio.OUT)
-gpio.setup(servo2, gpio.OUT)
 
-p = gpio.PWM(servo, 50)
-p2 = gpio.PWM(servo2, 50)
+# Initialise the PCA9685 using the default address (0x40).
+pwm = Adafruit_PCA9685.PCA9685()
 
-# Start PWM with 0% Duty Cycle
-p.start(0)
-p2.start(0)
+# Set frequency to 60hz, good for servos.
+pwm.set_pwm_freq(60)
 
 HOST = '192.168.1.161'  # Standard loopback interface address (localhost)
 PORT = 65432        # Port to listen on (non-privileged ports are > 1023)
@@ -30,7 +29,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     conn, addr = s.accept()
     with conn:
         print('Connected by', addr)
-        conn.sendall(b'Successfully connected!')
+        conn.sendall(b'Successfully connected with V1.1!')
 
         while True:
             try:
@@ -82,19 +81,18 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                             i_gas = int(data[2:4])
                             #print (i_lenkwinkel)
                             #print (i_gas)
-                            i_gas = interp(i_gas,[10,90],[2.5,12.5])
-                            i_lenkwinkel = interp(i_lenkwinkel,[10,90],[2.5,12.5])
-                            print ("LW", i_lenkwinkel)
-                            print ("GA", i_gas)
+                            i_gas = interp(i_gas,[10,90],[150,600])
+                            i_lenkwinkel = interp(i_lenkwinkel,[10,90],[150,600])
+                            #print ("LW", i_lenkwinkel)
+                            #print ("GA", i_gas)
 
                             #Writes out the values for throttle and steering to the servo
-                            p.ChangeDutyCycle(i_gas)
-                            p2.ChangeDutyCycle(i_lenkwinkel)
+                            pwm.set_pwm(0, 0, int(i_lenkwinkel))
+                            pwm.set_pwm(1, 0, int(i_gas))
 
 
                             if not data:
                                 break
             except ConnectionResetError:
                 #Jumps here when client disconnects -> Motor and steering stop
-                p.ChangeDutyCycle(2.5)
-                p2.ChangeDutyCycle(2.5)
+                pwm.set_pwm(0, 0, 150)
