@@ -30,3 +30,7 @@ If you are planning to drive it via LTE/3G, you will need to set up an reverse S
 
 <br/><br/>
 ATTENTION: This is a BETA version, no liability is assumed for any damage, <br/>you are responsible for using it in full!
+
+## License
+
+[MIT](LICENSE). Third-party parts keep their own licenses, see [NOTICE.md](NOTICE.md).
