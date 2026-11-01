@@ -3,6 +3,9 @@
 > **Deprecated:** This repository is no longer maintained. Please use [YonderRC](https://github.com/TechnikWeber/YonderRC) instead.
 
 Full project for creating an unlimited range fpv car driven over the web<br/>
+
+![Windows client: connect to the server, light on/off, calibrate the ESC, gamepad axes](docs/screenshot.png)
+
 CREDITS: Source code for Camera-Server on Raspberry Pi from Yasin Arabi<br/><br/>
 servo = 12 #Pin12 Out PWM -> Acceleration(Motor)<br/>
 servo2 = 13 #Pin13 Out PWM -> Steering<br/><br/>
